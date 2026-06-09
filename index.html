@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternTrack — Track Every Internship Application</title>
+  <meta name="description" content="InternTrack helps students organize internship applications, hit every deadline, and land more interviews — all in one simple dashboard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">IT</span>
+        <span class="logo-text">InternTrack</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#stats">Stats</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost">Sign in</a>
+        <a href="#cta" class="btn btn-primary">Get started</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge">
+          <span class="dot"></span> Built by students, for students
+        </span>
+        <h1>Track every internship <span class="gradient">application in one place</span></h1>
+        <p class="lead">
+          Stop drowning in spreadsheets and browser tabs. InternTrack helps you organize
+          applications, never miss a deadline, and land your first internship with less stress.
+        </p>
+        <div class="hero-cta">
+          <a href="#cta" class="btn btn-primary btn-lg">Start tracking free →</a>
+          <a href="#" class="btn btn-outline btn-lg">▶ Watch 60s demo</a>
+        </div>
+        <div class="social-proof">
+          <div class="avatars">
+            <span>A</span><span>B</span><span>C</span><span>D</span>
+          </div>
+          <p>Used by students at 200+ universities</p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-mock">
+          <div class="mock-header">
+            <span class="mock-dot red"></span>
+            <span class="mock-dot yellow"></span>
+            <span class="mock-dot green"></span>
+            <span class="mock-title">My Applications</span>
+          </div>
+          <div class="kanban">
+            <div class="column">
+              <h4>Applied <span>12</span></h4>
+              <div class="card-mock">Google · SWE Intern</div>
+              <div class="card-mock">Stripe · Backend</div>
+              <div class="card-mock">Figma · Design</div>
+            </div>
+            <div class="column">
+              <h4>Interview <span>4</span></h4>
+              <div class="card-mock highlight">Notion · PM Intern</div>
+              <div class="card-mock">Vercel · Frontend</div>
+            </div>
+            <div class="column">
+              <h4>Offer <span>1</span></h4>
+              <div class="card-mock success">Linear · SWE 🎉</div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card">
+          <div class="fc-icon">📊</div>
+          <div>
+            <strong>47 applications</strong>
+            <small>Tracked this semester</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Everything you need to <span class="gradient">land the offer</span></h2>
+        <p>Purpose-built for students juggling 50+ applications, midterms, and a part-time job.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🗂️</div>
+          <h3>Visual pipeline</h3>
+          <p>Drag applications across stages — Saved, Applied, Interview, Offer, Rejected. See exactly where every opportunity stands.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Deadline reminders</h3>
+          <p>Get notified before applications close and the day before each interview. Never miss a follow-up email again.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>Resume vault</h3>
+          <p>Attach the exact resume version you sent to each company. Stop wondering which file got you the callback.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Progress insights</h3>
+          <p>See response rates by industry, role, and resume version. Learn what's working so you can apply smarter.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>How it <span class="gradient">works</span></h2>
+        <p>From first application to signed offer in three simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-badge">01</div>
+          <h3>Add an application</h3>
+          <p>Paste a job link and we auto-fill the company, role, and deadline. Add notes and attach your resume.</p>
+        </div>
+        <div class="step">
+          <div class="step-badge">02</div>
+          <h3>Move it through stages</h3>
+          <p>Update status as you go — applied, OA sent, phone screen, final round. Reminders fire automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-badge">03</div>
+          <h3>Compare and accept</h3>
+          <p>When offers roll in, compare salary, location, and team side-by-side. Make the call with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat"><h3>25K+</h3><p>Students tracking</p></div>
+        <div class="stat"><h3>480K+</h3><p>Applications managed</p></div>
+        <div class="stat"><h3>3.2x</h3><p>More interviews</p></div>
+        <div class="stat"><h3>5.0★</h3><p>Average rating</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section cta-section">
+    <div class="container cta-box">
+      <h2>Recruiting season is already here</h2>
+      <p>Join 25,000+ students landing better internships with less chaos. Free forever with your .edu email.</p>
+      <form class="cta-form" id="ctaForm">
+        <input type="email" placeholder="you@university.edu" required />
+        <button type="submit" class="btn btn-primary btn-lg">Claim free account</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo">
+          <span class="logo-mark">IT</span>
+          <span class="logo-text">InternTrack</span>
+        </a>
+        <p class="footer-tag">The internship tracker built for students. Stay organized, hit every deadline, land the offer.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul><li><a href="#features">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Changelog</a></li></ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul><li><a href="#">Resume tips</a></li><li><a href="#">Interview prep</a></li><li><a href="#">Blog</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>©<span id="year"></span> InternTrack. All rights reserved.</p>
+      <p>Made by students, for students.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
