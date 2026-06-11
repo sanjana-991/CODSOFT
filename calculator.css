@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#fce4ec,#ef72ef);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+/* Logo */
+.header{
+    margin-top:40px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#4a1f33;
+}
+
+.logo span{
+    font-size:35px;
+}
+
+.logo h1{
+    font-size:35px;
+}
+
+
+/* Calculator box */
+.calculator-display,
+.calculator-keypad{
+    width:340px;
+}
+
+
+.calculator-display{
+    margin-top:40px;
+    padding:20px;
+    background:#e8b8cc;
+    border-radius:20px 20px 0 0;
+    text-align:right;
+    box-shadow:inset 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+.calculator-operator{
+    height:20px;
+    color:#8b4965;
+    font-size:15px;
+}
+
+
+.calculator-value{
+    font-size:45px;
+    font-weight:600;
+    color:#4a1f33;
+    overflow:hidden;
+}
+
+
+/* Buttons area */
+.calculator-keypad{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+
+    padding:20px;
+
+    background:#f3cede;
+    border-radius:0 0 25px 25px;
+
+    box-shadow:
+    0 20px 40px rgba(120,50,90,0.25);
+}
+
+
+/* All buttons */
+.calculator-keypad button{
+
+    height:65px;
+    border:none;
+    border-radius:18px;
+
+    font-size:22px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+
+.calculator-keypad button:hover{
+    transform:translateY(-3px);
+}
+
+
+/* Numbers */
+.calculator-btn-default{
+
+    background:white;
+    color:#5a2d42;
+
+}
+
+
+/* AC */
+.calculator-btn-secondary{
+    grid-column: span 4;
+    background:#f0aac5;
+    color:#7a3655;
+    height:50px;
+}
+
+
+/* Operators */
+.calculator-btn-operator{
+
+    background:#c94f86;
+    color:white;
+
+}
+
+
+/* Equal button */
+.calculator-btn-operator:hover{
+    background:#b53d73;
+}
+
+
+/* Display input alternative */
+#display{
+    border:none;
+    outline:none;
+}
+
+
+/* Mobile */
+@media(max-width:400px){
+
+    .calculator-display,
+    .calculator-keypad{
+        width:90%;
+    }
+
+}
